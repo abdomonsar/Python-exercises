@@ -1,3 +1,4 @@
+import random
 number=int(input("Enter Number: "))
 if number ==0 :
     print(f"The Number={number}")
@@ -57,3 +58,55 @@ elif age > 16 and age <40 :
     print("Full price")   
 else :
     print("descount")     
+num=float(input("Enter Number: "))
+if 10 <= num >=20 :
+    print("The number is within the range")
+else :
+    print("The number is not within the range")  
+num1=float(input("Enter number 1: "))  
+num2=float(input("Enter number 2: ")) 
+if num1 == num2 :
+    print("It equals") 
+else :
+    print("Not equal")    
+sentence=input("Enter sentence: ")
+if "python" in sentence:
+    print("existing")
+else :
+    print("unavailable")    
+
+numra=random.randint(1,10)
+while True :
+    num=int(input("Enter number between 1-10: "))
+    if num == numra :
+        print("I won")
+        break
+    elif num > numra :
+        print("The number is bigger")
+    else :
+        print("The number is smaller")    
+ch=input("Enter a character: ")
+if len(ch) !=1 :
+    print("Enter just one letter")
+elif ch.isdigit():
+    print("Number")
+elif ch.islower():
+    print("Small letter")   
+elif ch.isupper():
+    print("uppercase letter")     
+else :
+    print("code")     
+text = input("Enter text: ")
+if text.strip() !="" :
+    print("The text is not empty")
+    print(text)
+else :
+    print("The text is empty")    
+username="AbdulMajeed"
+password="pasword123"
+user=input("Enter UserName: ")
+passw=input("Enter Password: ")
+if user==username and passw==password :
+    print("Corecct")
+else :
+    print("Erorr")            
